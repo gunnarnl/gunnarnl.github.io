@@ -1,0 +1,168 @@
+html, body {
+	font-family: 'Lora', Georgia, serif;
+	background-color: #fff;
+	color: #000;
+}
+
+#container {
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background: url('../images/bg2-3.png') no-repeat;*/
+	}
+
+#name {
+	padding: 10px 0px 10px 30px;
+	}
+
+h1, h2 {
+	font-family:'Karla', sans-serif;
+	}
+
+#name h1 {
+	font-weight:200;
+	font-size:3.7em;
+	word-spacing: .5em;
+	}
+
+h1 {
+	word-spacing: .5em;
+}
+
+.cv {
+	border-bottom: 1px #000 solid;
+	padding-bottom: 10px;
+}
+
+#content h1{
+	margin-top: 0px;
+}
+
+h2 {
+	font-size:1.5em;
+}
+
+p {
+	font-size:1.1em;
+	}
+
+h1, li a {
+	background-color: white;
+	}
+
+mark {
+	background-color:white;
+	}
+
+#header-panel {
+	width:100%;
+	margin:0px;
+	border-top: 1px #000 solid;
+	border-bottom: 1px #000 solid;
+	}
+
+#nav {
+    list-style-type:none;
+	margin: 10px 0px;
+	padding-left: 60px;
+	}
+
+#nav li {
+	display:inline-block;
+	height:15px;
+	}
+
+#nav li a {
+	font-family: 'karla', 'century gothic', sans-serif;
+	display:inline-block;
+	margin-right:60px;
+	font-size: 20px;
+}
+
+td {
+	padding: 0px;
+}
+
+.research {
+	list-style-type:none;
+	padding-left: 20px;
+}
+
+.research td {
+	vertical-align: top;
+	text-align: left;
+	padding-right: 20px;
+}
+
+.research td~td {
+	padding: 0px;
+}
+
+.research span {
+	text-decoration: underline;
+}
+
+#content {
+	margin: 30px 10px;
+	padding: 15px 20px;
+	}
+
+#face {
+	float:right;
+	padding: 5px 5px 5px 20px;
+	width:200px;
+	height:224px;
+	}
+
+#doodle {
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+	}
+
+#footer {
+	width:100%;
+	margin-bottom:10px;
+	border-top:1px #A41034 solid;
+	}
+
+#vistable {
+	width:100%;
+	text-align: center;
+	}
+
+.gallery{
+	max-height:175px;
+	max-width: 175px;
+	height:auto;
+	width:auto;
+	}
+
+a:link {text-decoration:none; color:#A41034;}
+a:link.this-page {text-decoration:underline;}
+a:visited {text-decoration:none; color:#A41034;}
+a:hover {text-decoration:underline; color:#000;}
+a:active {text-decoration:underline;}
+
+
+/* enlarge.js stuff */
+.enlarge{
+	cursor:pointer;
+	}
+
+#imgbgdiv {
+	position:fixed;
+	width:100%;
+	height:100%;
+	top: 0px;
+	left: 0px;
+	background-color:rgba(219, 219, 219, 0.62);
+	}
+
+#bigimg {
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	position: relative;
+	border: 7px solid rgba(148, 148, 148, 0.56);
+	}
