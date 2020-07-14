@@ -90,17 +90,17 @@ postCtx =
 --need to think about how to deal with maybe values though
 --
 --This stuff all works fine, but I think I'm going to manually enter the stuff into html tables.
-splitPipe' :: [String] -> [(String, String)]
-splitPipe' s = map (break (=='|')) s
-
-insRow :: [(String, String)] -> [String]
-insRow [] = [""]
-insRow ((x, y:ys):ps) = ("\t<tr><td class=\"year\">"++x++"</td><td class=\"pub\">"++ys++"</td></tr>"):rest
-       where rest = insRow ps
-
-makeTable :: [String] -> String
-makeTable rs = "<table>\n"++(concat (map (++"\n") rs))++"</table>"
-
-makeTemp :: String -> String -> IO ()
-makeTemp _ "" = return ()
-makeTemp file x = writeFile file (makeTable . insRow . splitPipe' . lines $ x)
+-- splitPipe' :: [String] -> [(String, String)]
+-- splitPipe' s = map (break (=='|')) s
+--
+-- insRow :: [(String, String)] -> [String]
+-- insRow [] = [""]
+-- insRow ((x, y:ys):ps) = ("\t<tr><td class=\"year\">"++x++"</td><td class=\"pub\">"++ys++"</td></tr>"):rest
+--        where rest = insRow ps
+--
+-- makeTable :: [String] -> String
+-- makeTable rs = "<table>\n"++(concat (map (++"\n") rs))++"</table>"
+--
+-- makeTemp :: String -> String -> IO ()
+-- makeTemp _ "" = return ()
+-- makeTemp file x = writeFile file (makeTable . insRow . splitPipe' . lines $ x)
