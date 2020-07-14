@@ -1,5 +1,0 @@
-<table>
-	$for(presentations)$
-		<tr><td>$year$</td><td>$author$. "$title$" at $if(event)$$event$,$endif$$if(conference)$<i>$conference$</i>,$endif$ $location$. $if(poster)$<a href="/presentations/$poster$">[poster]</a>$endif$$if(handout)$<a href="/presentations/$handout$">[handout]</a>$endif$$if(slides)$<a href="/presentations/$slides$">[slides]</a>$endif$</td></tr>
-	$endfor$
-</table>
