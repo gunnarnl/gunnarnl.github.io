@@ -24,7 +24,7 @@ cp -a _site/. .
 
 # Commit
 git add -A
-git commit -m "Publish updates on $date."
+git commit -m "Publish updates on ($date)."
 
 # Push
 git push origin master:master
