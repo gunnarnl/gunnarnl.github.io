@@ -1,0 +1,5 @@
+<table>
+	$for(publications)$
+		<tr><td>$year$</td><td>$author$. $title$. $pubinfo$ $if(pdf)$<a href="/publications/$pdf$">[pdf]</a>$endif$</td></tr>
+	$endfor$
+</table>
