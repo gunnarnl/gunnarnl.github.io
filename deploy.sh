@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-now=$(date)
+now=$(date +"%F %T")
 
 # Temporarily store uncommited changes
 git stash
@@ -13,7 +13,7 @@ stack build
 stack exec site rebuild
 
 git add .
-git commit -m "Update dev on $now."
+git commit -m "Update dev branch on $now."
 
 # Get previous files
 git fetch --all
