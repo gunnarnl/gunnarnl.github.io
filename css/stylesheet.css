@@ -4,8 +4,20 @@ html, body {
 	color: #000;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: sans-serif;
+}
+
+h1 {
+	font-size: xx-large;
+}
+
+h2 {
+	font-size: x-large;
+}
+
+h3 {
+	font-size: medium;
 }
 
 a:link {text-decoration:none; color:#A41034;}
@@ -61,6 +73,11 @@ td {
 
 tr + tr td {
 	padding-top: 1rem;
+}
+
+pre {
+	overflow-x: auto;
+	padding-bottom: 7px;
 }
 
 /* @media (max-width: 319px) {

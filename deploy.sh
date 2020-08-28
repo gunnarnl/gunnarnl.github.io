@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+now=$(date)
+
 # Temporarily store uncommited changes
 git stash
 
@@ -11,7 +13,7 @@ stack build
 stack exec site rebuild
 
 git add .
-git commit -m "Update dev on $date."
+git commit -m "Update dev on $now."
 
 # Get previous files
 git fetch --all
@@ -24,7 +26,7 @@ cp -a _site/. .
 
 # Commit
 git add -A
-git commit -m "Publish updates on ($date)."
+git commit -m "Publish updates on $now."
 
 # Push
 git push origin master:master
