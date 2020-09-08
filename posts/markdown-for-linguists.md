@@ -8,7 +8,7 @@ tags: linguistics, writing, software, markdown, pandoc
 
 Here, I want to make the case for using Markdown as a linguist by anecdote. Maybe this is like those [cooking blogs](https://twitter.com/redford/status/1256988715349471232) that provide rambling, irrelevant stories before getting to the recipe you're there for. In any case, I describe the tools and workflow that I use in the [next section](#setup), if that's what you're here for.
 
-Anyway, I used to virtually all of my writing in LaTeX, like many linguists. There are many advantages to using LaTeX. It's relatively easy to write mathematical formulae, it renders professional and easy to read documents, it's immensely customizable, there are many useful linguistics-specific packages, and so on. On top of all that, [Overleaf](https://www.overleaf.com/) provides a convenient Google Docs-like cloud service so there's no need to worry about different installations on different machines.
+Anyway, I used to do virtually all of my writing in LaTeX, like many linguists. There are many advantages to using LaTeX. It's relatively easy to write mathematical formulae, it renders professional and easy to read documents, it's immensely customizable, there are many useful linguistics-specific packages, and so on. On top of all that, [Overleaf](https://www.overleaf.com/) provides a convenient Google Docs-like cloud service so there's no need to worry about different installations on different machines.
 
 But writing in LaTeX *sucks*. As typesetting software, it's excellent, but for actually putting words on the page, I find it extremely cumbersome. I find it hard to maintain a steady writing flow. If something renders weird or if there's an error---it's not hard to miss a closing bracket---who knows how long it might take to fix. Also LaTeX markup is ugly and I do a lot of my editing in the same document I write in. These are maybe petty complaints, but when I'm trying to write, *I just wanna write*.
 
@@ -64,7 +64,7 @@ There are more examples in the link there. What about trees? For now, unfortunat
 
 [^tree]: Tree syntax isn't going to be very legible in any case, so I don't consider this a huge problem.
 
-# Tools and workflow
+# Tools and workflow {#setup}
 
 My setup will probably seem obnoxiously similar to that of a software developer (and maybe it is obnoxious!), but software development and academic writing are not all that different in the year 2020. Software development involves one or more people writing source code---plain text files---which is then compiled into a finished product---a program. The source code is where most of the work is done, and developers want to be able to integrate each other's code and track and compare changes in the code over time. Compiling the program might involve all kinds of dependencies, which developers will also want to keep track of and ensure are in working order. This is not really any different than the process that academics using LaTeX use: we write in plain text tex files---the "source code"---and compile them into pdfs---the finished product. Compilation of these documents might involve dependencies like figures stored as images. Projects with multiple authors need to share up-to-date versions of these documents so that the authors don't end up diverging too much.
 
